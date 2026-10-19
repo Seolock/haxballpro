@@ -1,0 +1,22 @@
+# environments — rebuilt from uv.lock / js/package-lock.json, never committed
+.venv/
+js/node_modules/
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# training output
+runs/
+# model zips, ~1.8 MB per snapshot
+# checkpoints/
+# hbrl/record.py default output
+match.json
+*.log
+
+# os / editor
+.DS_Store
+.idea/
+.vscode/

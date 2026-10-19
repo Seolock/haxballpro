@@ -1,0 +1,8 @@
+{
+  "name": "haxballpro-js",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "node-haxball": "^2.3.1"
+  }
+}

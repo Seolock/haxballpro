@@ -1,0 +1,22 @@
+[project]
+name = "hbrl"
+version = "0.1.0"
+description = "HaxBall 1v1 self-play RL agent"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "numpy>=2.0",
+    "torch>=2.5",
+    "stable-baselines3>=2.4",
+    "tensorboard>=2.18",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["hbrl"]
+
+# the `pytest` console script does not put the repo root on sys.path the way
+# `python -m pytest` does, so `import hbrl` fails without this
+[tool.pytest.ini_options]
+pythonpath = ["."]
